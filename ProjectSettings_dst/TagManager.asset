@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Yellow_Room
+  - Green_Room
+  - Item
+  - Sword
+  - Magnet
+  - Key
+  - Puller
+  - Bridge
+  - Dragon
+  - Blue_Room
+  - Cup
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ignore Item
+  - Water
+  - UI
+  - Magnet
+  - Wall
+  - Brigde Pass
+  - Item
+  - Enemy
+  - Door
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Item_taked
+    uniqueID: 4090892563
+    locked: 0
+  - name: Item
+    uniqueID: 2971918281
+    locked: 0

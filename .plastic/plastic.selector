@@ -1,0 +1,4 @@
+repository "Adventure@Majora_Kid@cloud"
+  path "/"
+    br "/main"
+    co "/main"

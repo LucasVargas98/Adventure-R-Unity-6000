@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - Item
+  - Sword
+  - Magnet
+  - Key
+  - Puller
+  - Bridge
+  - Dragon
+  - Cup
+  - D2D240_Room
+  - 5CBA5C_Room
+  - A0AB4F_Room
+  - 4248C8_Room
+  - 9246C0_Room
+  - 000000_Room
+  - 87B754_Room
+  - C66C3A_Room
+  - Bat
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - Ignore Item
+  - Water
+  - UI
+  - Magnet
+  - Wall
+  - Brigde Pass
+  - Item
+  - Enemy
+  - Door
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: Item_taked
+    uniqueID: 4090892563
+    locked: 0
+  - name: Item
+    uniqueID: 2971918281
+    locked: 0
