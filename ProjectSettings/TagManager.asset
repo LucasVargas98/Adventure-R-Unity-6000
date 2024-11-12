@@ -2,7 +2,7 @@
 %TAG !u! tag:unity3d.com,2011:
 --- !u!78 &1
 TagManager:
-  serializedVersion: 2
+  serializedVersion: 3
   tags:
   - Item
   - Sword
@@ -20,6 +20,7 @@ TagManager:
   - 000000_Room
   - 87B754_Room
   - C66C3A_Room
+  - FFFFFF_Room
   - Bat
   layers:
   - Default
@@ -64,3 +65,5 @@ TagManager:
   - name: Item
     uniqueID: 2971918281
     locked: 0
+  m_RenderingLayers:
+  - Default
