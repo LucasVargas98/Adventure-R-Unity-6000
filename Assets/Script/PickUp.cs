@@ -52,7 +52,7 @@ public class PickUp : MonoBehaviour
     void DropItem()
     {
         if (Input.GetButtonDown("Fire") || Input.GetButtonDown("R")) {
-            //gameObject.transform.SetParent(null);
+            gameObject.transform.SetParent(null);
             gameObject.transform.parent = null;
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), magnet.GetComponent<Collider2D>(),false);
 
