@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class DragonYellow : MonoBehaviour
@@ -23,9 +22,8 @@ public class DragonYellow : MonoBehaviour
 
     public int life;
 
-    public GameObject sword;
-
     //public Animator anim;
+    
     Vector2 dragon_Position;
 
     public DragonLife dragon_life;
@@ -64,8 +62,7 @@ public class DragonYellow : MonoBehaviour
 
         if(can_move == true){
             dragon.transform.position = Vector2.MoveTowards
-            (transform.position, player.transform.position, speed * Time.deltaTime);
-             
+            (transform.position, player.transform.position, speed * Time.deltaTime);        
         }
     }
 

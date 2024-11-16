@@ -37,28 +37,19 @@ public class DragonLife : MonoBehaviour{
         }
     }
 
-    void OnTriggerEnter2D(Collider2D other){
+    void OnCollisionEnter2D(Collision2D other){
         if(other.gameObject.tag == "Sword"){
-
-            if(life > 0)
-            {
-                dragonSound.PlayOneShot(deadSound, 1f);
-            }
-            life--;
-            //Debug.Log("Faliceu");
+            life --;
+            dragonSound.PlayOneShot(deadSound, 1f);
+           
         }
     }
 
-    void OnCollisionEnter2D(Collision2D other)
-    {
-        if (other.gameObject.tag == "Sword")
-        {
-
-            if (life > 0)
-            {
-                dragonSound.PlayOneShot(deadSound, 1f);
-            }
-            life--;
+    void OnTriggerEnter2D(Collider2D other){
+         if(other.gameObject.tag == "Sword"){
+            life --;
+            dragonSound.PlayOneShot(deadSound, 1f);
+         
         }
     }
 }

@@ -14,7 +14,6 @@ public class DragonAttack : MonoBehaviour
 
 
     public GameObject dragonSensorObj;
-    public string dragonSensorName;
 
     //relacionado para o dragão poder atacar quando o player encostar
     public bool can_attack;
@@ -36,6 +35,8 @@ public class DragonAttack : MonoBehaviour
     private bool startCount;
     private bool waitCount;
 
+    public string dragonName;
+
     public float waitForChase; //fazer o dragão esperar quando o jogador sair
     public float initialWaitChase;
 
@@ -44,7 +45,7 @@ public class DragonAttack : MonoBehaviour
     {
         player = GameObject.Find("Player");
         dragonBody = this.gameObject;
-        dragonSensorObj = GameObject.Find(dragonSensorName);
+        dragonSensorObj = GameObject.Find(dragonName);
         anim = GetComponent<Animator>();
         rb2d = GetComponent<Rigidbody2D>();
         bc2D = GetComponent<BoxCollider2D>();

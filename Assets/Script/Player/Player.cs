@@ -13,9 +13,7 @@ public class Player : MonoBehaviour
     public float initial_posX;
     public float initial_posY;
 
-    //contador de item
     public int itemCount;
-
 
     void Start(){
         player = this.gameObject;

@@ -12,9 +12,9 @@ GameObject:
   - component: {fileID: 8426721211928422143}
   - component: {fileID: 983913501365961358}
   - component: {fileID: 983913501365961353}
-  - component: {fileID: 983913501365961352}
-  - component: {fileID: 983913501896328495}
   - component: {fileID: 2873692932589893644}
+  - component: {fileID: 5982653681660370158}
+  - component: {fileID: 5590563450876593984}
   m_Layer: 9
   m_Name: Yellow_Key
   m_TagString: Item
@@ -54,6 +54,9 @@ SpriteRenderer:
   m_ReflectionProbeUsage: 1
   m_RayTracingMode: 0
   m_RayTraceProcedural: 0
+  m_RayTracingAccelStructBuildFlagsOverride: 0
+  m_RayTracingAccelStructBuildFlags: 1
+  m_SmallMeshCulling: 1
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
@@ -91,7 +94,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!50 &983913501365961358
 Rigidbody2D:
-  serializedVersion: 4
+  serializedVersion: 5
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -102,8 +105,8 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
+  m_LinearDamping: 0
+  m_AngularDamping: 0.05
   m_GravityScale: 0
   m_Material: {fileID: 0}
   m_IncludeLayers:
@@ -162,28 +165,27 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.5, y: 0.25}
   m_EdgeRadius: 0
---- !u!114 &983913501365961352
+--- !u!114 &2873692932589893644
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8426721211928422136}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 26e29d0dfa40aa3458c55e3dbfd10925, type: 3}
+  m_Script: {fileID: 11500000, guid: b245e97c00dbcef45b9ced47998eb992, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key_castle: {fileID: 0}
   player: {fileID: 0}
-  game_manager: {fileID: 0}
-  grabed: 0
-  magnet_puller: {fileID: 0}
-  rb2d: {fileID: 0}
-  soundItem: {fileID: 0}
-  pickupSound: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
+  playerScript: {fileID: 0}
+  bat: {fileID: 0}
+  rgd2d: {fileID: 0}
+  magnet: {fileID: 0}
+  audioSource: {fileID: 0}
+  pickUpSound: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
   dropSound: {fileID: 8300000, guid: 2c92bdfe1043c244187eb3d45595ec5d, type: 3}
---- !u!82 &983913501896328495
+--- !u!82 &5982653681660370158
 AudioSource:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -193,7 +195,8 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
+  m_Resource: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -279,7 +282,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &2873692932589893644
+--- !u!114 &5590563450876593984
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -288,10 +291,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 8426721211928422136}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b245e97c00dbcef45b9ced47998eb992, type: 3}
+  m_Script: {fileID: 11500000, guid: d90ffddc1d7610847b6b23906a54f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  magnet: {fileID: 0}
+  pullerSpeed: 1.5
   player: {fileID: 0}
-  audioSource: {fileID: 0}
-  pickUpSound: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
-  dropSound: {fileID: 8300000, guid: 2c92bdfe1043c244187eb3d45595ec5d, type: 3}
+  scriptPlayer: {fileID: 0}
+  canMove: 0
+  rgd2d: {fileID: 0}
