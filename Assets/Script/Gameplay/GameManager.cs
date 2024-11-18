@@ -35,7 +35,7 @@ public class GameManager : MonoBehaviour
     public GameObject finishObj;
     public Finish endGameScript;
 
-    // inicia antes do proprio joho
+    // inicia antes do proprio jogo
     void Awake() {
         //Ignorar as físicas de alguns objetos    
         Physics2D.IgnoreLayerCollision(9, 7, true);
@@ -84,6 +84,7 @@ public class GameManager : MonoBehaviour
 
     //void apenas para funções relacionadas ao jogador
     void PlayerFunctions(){
+
         if(Input.GetButtonDown("R") && endGameScript.cantR == false){
             player.transform.position = new Vector2(initialPlayerPositionX,initialPlayerPositionY);
             scriptLifePlayer.life = 1;

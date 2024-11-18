@@ -4,10 +4,12 @@ using UnityEngine;
 
 public class AreaController : MonoBehaviour
 {
-    public GameObject game_camera;
+   [SerializeField] private GameObject game_camera;
+   //[SerializeField] private GameObject roomActual;
 
     void Awake(){
         game_camera.SetActive(false);
+        //roomActual.SetActive(false);
     }
 
 
@@ -16,14 +18,14 @@ public class AreaController : MonoBehaviour
 
     if(col.gameObject.tag == "Player"){
         game_camera.SetActive(true);
-
+        //roomActual.SetActive(true);
     }
      }
      void OnTriggerExit2D(Collider2D col){
         
         if(col.gameObject.tag == "Player"){
         game_camera.SetActive(false);
-
+        //roomActual.SetActive(false);
     }
      }
 }

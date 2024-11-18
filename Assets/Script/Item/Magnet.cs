@@ -5,51 +5,31 @@ using UnityEngine;
 public class Magnet : MonoBehaviour
 {
     //informações do ima
-    public GameObject magnet;
-    public float pullerSpeed;
 
-    //informações do player
-    public GameObject player;
-    public Player scriptPlayer;
+    [SerializeField] private float speed = 3f;
+    [SerializeField] private float distance;
 
-    public bool canMove;
+    [SerializeField] private Transform magnetTransform;
 
     //teste de função
     public Rigidbody2D rgd2d;
 
     void Start(){
-        magnet = GameObject.Find("Puller");
-        canMove = false;
-
-        //teste
         rgd2d = gameObject.GetComponent<Rigidbody2D>();
+        //magnetTransform = transform.Find("Magnet");
+        distance = Vector2.Distance(transform.position, magnetTransform.position);
     }
 
-    void FixedUpdate() {
+    void Update() {
 
-        if (canMove == true){
+        if (distance < 6){
             rgd2d.bodyType = RigidbodyType2D.Dynamic;
-            gameObject.transform.position = Vector2.MoveTowards(transform.position, magnet.transform.position, pullerSpeed * Time.deltaTime);
+            transform.position = Vector2.MoveTowards(transform.position, magnetTransform.position, speed * Time.deltaTime);
         }
-        else if (canMove == false) {
+        else {
             rgd2d.bodyType = RigidbodyType2D.Kinematic;
         }
 
     }
 
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.gameObject.tag == "Magnet" && gameObject.transform.parent == null)
-        {
-           canMove = true; 
-        }
-        
-    }
-
-    void OnTriggerExit2D(Collider2D other){
-        if (other.gameObject.tag == "Magnet")
-        {
-            canMove = false;
-        }
-    }
 }

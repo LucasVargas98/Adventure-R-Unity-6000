@@ -101,7 +101,7 @@ GameObject:
   - component: {fileID: 1831268224}
   - component: {fileID: 5693121578697618830}
   - component: {fileID: 9219330563409869062}
-  m_Layer: 9
+  m_Layer: 12
   m_Name: Sword
   m_TagString: Sword
   m_Icon: {fileID: 0}
@@ -326,9 +326,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ffddc1d7610847b6b23906a54f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnet: {fileID: 0}
-  pullerSpeed: 1.5
-  player: {fileID: 0}
-  scriptPlayer: {fileID: 0}
-  canMove: 0
-  rgd2d: {fileID: 0}
+  speed: 0
+  distance: 0
+  magnetTransform: {fileID: 0}
+  rgd2d: {fileID: 1927030383679253315}

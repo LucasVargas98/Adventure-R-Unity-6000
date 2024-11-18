@@ -38,20 +38,19 @@ public class PickUp : MonoBehaviour
 
         //teste
         rgd2d = gameObject.GetComponent<Rigidbody2D>();
-        magnet = GameObject.Find("Puller");
+        magnet = GameObject.Find("Magnet");
     }
 
     // Update is called once per frame
     void Update()
     {
         DropItem();
-        //gameObject.transform.position = itemTransform.transform.position;
 
     }
 
     void DropItem()
     {
-        if (Input.GetButtonDown("Fire") || Input.GetButtonDown("R")) {
+        if (Input.GetButtonDown("Fire") && Time.timeScale > 0 || Input.GetButtonDown("R") && Time.timeScale > 0) {
             gameObject.transform.SetParent(null);
             gameObject.transform.parent = null;
             Physics2D.IgnoreCollision(gameObject.GetComponent<Collider2D>(), magnet.GetComponent<Collider2D>(),false);
@@ -85,5 +84,6 @@ public class PickUp : MonoBehaviour
             rgd2d.bodyType = RigidbodyType2D.Kinematic;
 
         }
+
     }
 }

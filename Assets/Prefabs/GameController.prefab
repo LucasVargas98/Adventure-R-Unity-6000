@@ -47,8 +47,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   scriptPlayer: {fileID: 0}
   scriptLifePlayer: {fileID: 0}
-  actual_scene: SampleScene
-  itemCount: 0
+  actionButton: {fileID: 0}
+  menuPauseUi: {fileID: 0}
+  worldMapPanel: {fileID: 0}
+  glossaryPanel: {fileID: 0}
   finishObj: {fileID: 0}
   endGameScript: {fileID: 0}
 --- !u!81 &5003543278283275522
