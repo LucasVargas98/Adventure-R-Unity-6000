@@ -40,8 +40,11 @@ public class GameManager : MonoBehaviour
         //Ignorar as físicas de alguns objetos    
         Physics2D.IgnoreLayerCollision(9, 7, true);
         Physics2D.IgnoreLayerCollision(3, 7, true);
-        //Physics2D.IgnoreLayerCollision(9, 11, true);
+        Physics2D.IgnoreLayerCollision(12, 7, true);
         Physics2D.IgnoreLayerCollision(8, 10, true);
+        Physics2D.IgnoreLayerCollision(10, 10, true);
+        Physics2D.IgnoreLayerCollision(14,9,true); //ima e itens no geral
+        Physics2D.IgnoreLayerCollision(12,14,true); //espada e ima
 
         //pegar dados do script do player
         player = GameObject.Find("Player");
@@ -86,6 +89,9 @@ public class GameManager : MonoBehaviour
     void PlayerFunctions(){
 
         if(Input.GetButtonDown("R") && endGameScript.cantR == false){
+            //if(scriptPlayer.Inventory.Count >= 1){
+              //  player.GetComponentInChildren<PickUp>().gameObject.transform.SetParent(null);
+           // }
             player.transform.position = new Vector2(initialPlayerPositionX,initialPlayerPositionY);
             scriptLifePlayer.life = 1;
             scriptPlayer.speedX = initialPlayerSpeedX;

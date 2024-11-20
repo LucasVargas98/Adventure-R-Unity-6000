@@ -21,6 +21,10 @@ TagManager:
   - 87B754_Room
   - C66C3A_Room
   - FFFFFF_Room
+  - B2B2B2_Room
+  - 49B18E_Room
+  - 4997BE_Room
+  - CantPickUp
   layers:
   - Default
   - TransparentFX
@@ -35,8 +39,8 @@ TagManager:
   - Enemy
   - Door
   - Sword
-  - 
-  - 
+  - Area
+  - Magnet
   - 
   - 
   - 

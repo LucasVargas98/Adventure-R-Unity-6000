@@ -28,7 +28,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2713670119619803681}
   serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 11.71, y: -12.01, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -124,12 +124,14 @@ MonoBehaviour:
   dragonStatus: 0
   playerDistance: 0
   playerTransform: {fileID: 0}
+  maxDistance: 6.5
   player: {fileID: 0}
   playerScript: {fileID: 0}
   swordDistance: 0
   swordTransform: {fileID: 0}
-  contador: 0
-  maxContador: 1.5
+  canScape: 0
+  counter: 0
+  maxCounter: 1.5
   speed: 3
   life: 1
   damage: 0

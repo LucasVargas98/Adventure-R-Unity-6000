@@ -33073,9 +33073,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bc2d: {fileID: 0}
-  door_opening: 0.8
-  door_castle: {fileID: 0}
-  key_name: Black_Key
+  doorOpening: 0
+  doorCastle: {fileID: 0}
+  keyName: 
   passageName: passageBC
   passageCastle: {fileID: 0}
 --- !u!61 &1722844212191126793
@@ -45918,7 +45918,7 @@ GameObject:
   - component: {fileID: 6900470469172409453}
   m_Layer: 0
   m_Name: Area5.2
-  m_TagString: C66C3A_Room
+  m_TagString: B2B2B2_Room
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -48587,7 +48587,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.5294118, g: 0.7176471, b: 0.32941177, a: 1}
+  m_Color: {r: 0.7529412, g: 0.38039216, b: 0.21960784, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -48823,7 +48823,7 @@ GameObject:
   - component: {fileID: 7845870149508640125}
   - component: {fileID: 2976482846722643466}
   m_Layer: 7
-  m_Name: C66C3A_room
+  m_Name: B2B2B2_room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -54140,7 +54140,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
+  m_Color: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -54293,7 +54293,7 @@ GameObject:
   - component: {fileID: 6338623809794243974}
   - component: {fileID: 7481286790161082339}
   m_Layer: 7
-  m_Name: C66C3A_room
+  m_Name: B2B2B2_room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58720,7 +58720,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
+  m_Color: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -59098,7 +59098,7 @@ GameObject:
   - component: {fileID: 3465686598891401530}
   - component: {fileID: 3465686598891401529}
   m_Layer: 7
-  m_Name: C66C3A_room
+  m_Name: B2B2B2_room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -64465,7 +64465,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
+  m_Color: {r: 0.69803923, g: 0.69803923, b: 0.69803923, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -69067,9 +69067,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bc2d: {fileID: 0}
-  door_opening: 0.8
-  door_castle: {fileID: 0}
-  key_name: Yellow_Key
+  doorOpening: 0
+  doorCastle: {fileID: 0}
+  keyName: YellowKey
   passageName: passageYC
   passageCastle: {fileID: 0}
 --- !u!61 &3465686599818394834
@@ -73097,7 +73097,7 @@ GameObject:
   - component: {fileID: 3465686600012463712}
   m_Layer: 0
   m_Name: Area5
-  m_TagString: C66C3A_Room
+  m_TagString: B2B2B2_Room
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -81399,7 +81399,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+  m_BackGroundColor: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -81616,7 +81616,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+  m_BackGroundColor: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -81732,7 +81732,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 2
-  m_BackGroundColor: {r: 0.6981132, g: 0.6981132, b: 0.6981132, a: 1}
+  m_BackGroundColor: {r: 0.7764706, g: 0.42352942, b: 0.22745098, a: 1}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
@@ -81876,9 +81876,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bc2d: {fileID: 0}
-  door_opening: 0.8
-  door_castle: {fileID: 0}
-  key_name: White_Key
+  doorOpening: 0
+  doorCastle: {fileID: 0}
+  keyName: 
   passageName: passageWC
   passageCastle: {fileID: 0}
 --- !u!61 &9156398930119384198
@@ -87950,7 +87950,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1425348612205835738}
   m_Layer: 0
-  m_Name: Labyrinth
+  m_Name: BlueMaze
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87990,7 +87990,7 @@ GameObject:
   - component: {fileID: 5311251231508832399}
   m_Layer: 0
   m_Name: Area5.1
-  m_TagString: C66C3A_Room
+  m_TagString: B2B2B2_Room
   m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -88108,7 +88108,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3722392659148727872}
   m_Layer: 0
-  m_Name: Field
+  m_Name: GoldenField
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -88357,8 +88357,8 @@ GameObject:
   - component: {fileID: 3226761707591168508}
   - component: {fileID: 3200826705263067676}
   m_Layer: 7
-  m_Name: 87B754_Room
-  m_TagString: Untagged
+  m_Name: 4997BE_Room
+  m_TagString: 4997BE_Room
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -90904,7 +90904,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.5294118, g: 0.7176471, b: 0.32941177, a: 1}
+  m_Color: {r: 0.28627452, g: 0.5921569, b: 0.74509805, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -91179,7 +91179,7 @@ GameObject:
   - component: {fileID: 4457628932456317874}
   - component: {fileID: 891012480803473301}
   m_Layer: 7
-  m_Name: 87B754_Room
+  m_Name: 49B18E_Room
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -92726,7 +92726,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.5294118, g: 0.7176471, b: 0.32941177, a: 1}
+  m_Color: {r: 0.28627452, g: 0.69411767, b: 0.5568628, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -94426,7 +94426,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.5294118, g: 0.7176471, b: 0.32941177, a: 1}
+  m_Color: {r: 0.28627452, g: 0.5019608, b: 0.8, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -97331,7 +97331,7 @@ Tilemap:
     m_Data: {r: 0.79073364, g: 0.42977807, b: 0.5068436, a: 1}
   m_TileObjectToInstantiateArray: []
   m_AnimationFrameRate: 1
-  m_Color: {r: 0.5294118, g: 0.7176471, b: 0.32941177, a: 1}
+  m_Color: {r: 0.53333336, g: 0.23137255, b: 0.7254902, a: 1}
   m_Origin: {x: -27, y: -19, z: 0}
   m_Size: {x: 70, y: 43, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}
@@ -97643,6 +97643,10 @@ PrefabInstance:
     - target: {fileID: 7442879798639116424, guid: 1505a9a54b717ad45a7413ed4486e6a5, type: 3}
       propertyPath: m_Name
       value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 7442879798639116424, guid: 1505a9a54b717ad45a7413ed4486e6a5, type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

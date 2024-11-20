@@ -15,8 +15,8 @@ GameObject:
   - component: {fileID: 7759088546286174959}
   - component: {fileID: 6050149861032127829}
   - component: {fileID: -5508660307377077290}
-  m_Layer: 0
-  m_Name: Black_Key
+  m_Layer: 9
+  m_Name: BlackKey
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -153,7 +153,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: -0.00553751, y: -0.013290882}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -163,7 +163,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5, y: 0.25}
+  m_Size: {x: 0.6, y: 0.3}
   m_EdgeRadius: 0
 --- !u!114 &7759088546286174959
 MonoBehaviour:
@@ -180,11 +180,11 @@ MonoBehaviour:
   player: {fileID: 0}
   playerScript: {fileID: 0}
   bat: {fileID: 0}
-  rgd2d: {fileID: 0}
   magnet: {fileID: 0}
   audioSource: {fileID: 0}
   pickUpSound: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
   dropSound: {fileID: 8300000, guid: 2c92bdfe1043c244187eb3d45595ec5d, type: 3}
+  rgd2d: {fileID: 0}
 --- !u!82 &6050149861032127829
 AudioSource:
   m_ObjectHideFlags: 0
@@ -294,9 +294,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d90ffddc1d7610847b6b23906a54f49d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  magnet: {fileID: 0}
-  pullerSpeed: 1.5
-  player: {fileID: 0}
-  scriptPlayer: {fileID: 0}
-  canMove: 0
-  rgd2d: {fileID: 0}
+  speed: 3
+  distance: 0
+  magnetTransform: {fileID: 0}
+  canPush: 1

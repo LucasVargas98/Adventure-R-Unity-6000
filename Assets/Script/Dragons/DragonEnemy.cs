@@ -15,6 +15,7 @@ public class DragonEnemy : MonoBehaviour
     //Criada para melhor separar as funções de IA do dragão
     public enum dragonAi{
         idle, //dragão parado
+        guarding, //guardar itens
         run, //correndo atrás do player
         attack, //atacando o player
         kill, //quando engole o player
@@ -49,8 +50,8 @@ public class DragonEnemy : MonoBehaviour
     private Animator anim; //animador do GameObject filho
 
     //criar um contador
-    [SerializeField] private float contador;
-    [SerializeField] private float maxContador;
+    [SerializeField] private float counter;
+    [SerializeField] private float maxCounter;
     [SerializeField] public float speed; //velocidade de movimento do dragão
     private float speedOr; //variavel para armazenar a velocidade original do dragão
 
@@ -71,7 +72,7 @@ public class DragonEnemy : MonoBehaviour
     {   
         Physics2D.IgnoreLayerCollision(7,10, true); //Ignorar a colisão com as paredes
         Physics2D.IgnoreLayerCollision(11,10, true); //Ignorar colisão com a porta do castelo
-        Physics2D.IgnoreLayerCollision(9,10, true); //Ignorar colisão com outros itens exceto espada
+        Physics2D.IgnoreLayerCollision(9,10, true); //Ignorar colisão com outros itens exceto espada (Espada está com o layer sword)
 
         dragonStatus = dragonAi.idle;
         playerTransform = GameObject.Find("Player").transform;
@@ -109,14 +110,25 @@ public class DragonEnemy : MonoBehaviour
         switch (dragonStatus){
 
             case dragonAi.idle:
+
                 anim.Play("idle");
-                contador = 0f;
+                rg2d.constraints = RigidbodyConstraints2D.None;
+                rg2d.constraints = RigidbodyConstraints2D.FreezeRotation;
+                counter = 0f;
                 speed = speedOr;
 
-                if(playerDistance < maxDistance && swordDistance > 4){
+                //if(playerDistance < maxDistance && swordDistance > 4){
+                    //dragonStatus = dragonAi.run;  
+                //}
+
+                if(playerDistance < maxDistance){
                     dragonStatus = dragonAi.run;  
                 }
 
+
+            break;
+
+            case dragonAi.guarding:
             break;
 
             case dragonAi.run:
@@ -128,35 +140,46 @@ public class DragonEnemy : MonoBehaviour
                     dragonStatus = dragonAi.scape;
                 }
 
-                if(playerDistance < 1){
-                    gameObject.transform.SetParent(playerTransform,true);
+                else if(playerDistance < 1){
+                    gameObject.transform.SetParent(playerTransform,true); //SetParent usado como uma forma para deixar o dragão como filho do player para pegar a posição local
                     transform.localPosition = new Vector2(0.23f, -0.544f);
                     dragonStatus = dragonAi.attack;
                     dragonSounds.PlayOneShot(chompClip,1f);
                 }
 
+               else if(playerDistance > maxDistance){
+                    dragonStatus = dragonAi.idle;
+                }
+
             break;
-          
+
+            
             case dragonAi.attack:
-                gameObject.transform.SetParent(null);
-                contador += Time.deltaTime;
+                gameObject.transform.SetParent(null); //fazer o GameObject dragão deixar ser filho do GameObject Player
+                counter += Time.deltaTime;
                 anim.Play("attack");
                 speed = 0;
-                if(contador >= maxContador && playerDistance < 1f){
+                rg2d.constraints = RigidbodyConstraints2D.FreezeAll;
+
+                if(counter >= maxCounter && playerDistance < 1f){
                     dragonStatus = dragonAi.kill;
+                    transform.position = new Vector2(playerTransform.position.x,playerTransform.position.y);
                     dragonSounds.PlayOneShot(deathClip,1f);
+                    
                 }
-                else if(contador >= maxContador) { 
+                else if(counter >= maxCounter) { 
                     dragonStatus = dragonAi.idle;
                  }
+
             break;
 
             case dragonAi.kill:
-                contador = 0.0f;
+                counter = 0.0f;
                 anim.Play("idle");
-                transform.position = new Vector2(playerTransform.position.x,playerTransform.position.y);
+                
                 playerScript.life = 0;
                 speed = 0;
+
                 if(Input.GetButtonDown("R")){
                     dragonStatus = dragonAi.idle;
                 }
@@ -179,6 +202,7 @@ public class DragonEnemy : MonoBehaviour
             break;
             
             case dragonAi.death:
+                gameObject.transform.SetParent(null);
                 speed = 0f;
                 damage = false;
                 anim.Play("death");
@@ -207,7 +231,7 @@ public class DragonEnemy : MonoBehaviour
         }
     }
 
-    void OnColliderEnter2D(Collision2D col){
+    void OnCollisionEnter2D(Collision2D col){
         if(col.gameObject.tag == "Sword" && life > 0){
             damage = true;
         }

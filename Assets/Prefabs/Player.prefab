@@ -182,6 +182,7 @@ MonoBehaviour:
   speedY: 3
   initial_posX: 0
   initial_posY: 0
+  darkenessMaze: {fileID: 0}
   itemCount: 0
 --- !u!114 &442995075
 MonoBehaviour:

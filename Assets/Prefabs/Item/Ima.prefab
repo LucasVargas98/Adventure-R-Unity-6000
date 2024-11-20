@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &4224637184197397897
+--- !u!1 &1201973511985443714
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,132 +8,37 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3119569365976622021}
-  - component: {fileID: 6543198083774203752}
-  - component: {fileID: 1884871878493488247}
-  m_Layer: 6
-  m_Name: Puller
-  m_TagString: Magnet
+  - component: {fileID: 7061228253394430565}
+  - component: {fileID: 6624359418593182999}
+  m_Layer: 9
+  m_Name: Sprite
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3119569365976622021
+--- !u!4 &7061228253394430565
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4224637184197397897}
+  m_GameObject: {fileID: 1201973511985443714}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.36, z: 0}
+  m_LocalPosition: {x: 0, y: 0.428, z: 0.004412174}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 6471514663335149319}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!58 &6543198083774203752
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4224637184197397897}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 1
-  m_CompositeOperation: 0
-  m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
-  m_Radius: 2.377054
---- !u!250 &1884871878493488247
-PointEffector2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4224637184197397897}
-  m_Enabled: 1
-  m_UseColliderMask: 1
-  m_ColliderMask:
-    serializedVersion: 2
-    m_Bits: 630
-  m_ForceMagnitude: -0.1
-  m_ForceVariation: -4
-  m_DistanceScale: 0.0001
-  m_ForceSource: 1
-  m_ForceTarget: 1
-  m_ForceMode: 0
-  m_Drag: 0
-  m_AngularDrag: 0
---- !u!1 &6471514663335149321
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 6471514663335149319}
-  - component: {fileID: 6471514663335149320}
-  - component: {fileID: 1639701785}
-  - component: {fileID: 1639701786}
-  - component: {fileID: 1639701787}
-  - component: {fileID: 1639701789}
-  - component: {fileID: 4144914225565627322}
-  m_Layer: 9
-  m_Name: Ima
-  m_TagString: Magnet
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &6471514663335149319
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471514663335149321}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.48143864, y: -3.53684, z: 0.004412174}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 3119569365976622021}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &6471514663335149320
+--- !u!212 &6624359418593182999
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471514663335149321}
+  m_GameObject: {fileID: 1201973511985443714}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -170,18 +75,55 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 4
+  m_SortingOrder: 3
   m_Sprite: {fileID: -1887038553, guid: ad6360b56d25eea009c764a1f098853f, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 0.5, y: 0.5}
+  m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &6471514663335149321
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 6471514663335149319}
+  - component: {fileID: 1639701785}
+  - component: {fileID: 1639701786}
+  - component: {fileID: 1639701789}
+  - component: {fileID: 4144914225565627322}
+  - component: {fileID: 6217376245562860326}
+  m_Layer: 14
+  m_Name: Ima
+  m_TagString: Item
+  m_Icon: {fileID: 5721338939258241955, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &6471514663335149319
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471514663335149321}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.48143864, y: -3.53684, z: 0.004412174}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 7061228253394430565}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!50 &1639701785
 Rigidbody2D:
   serializedVersion: 5
@@ -190,7 +132,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 6471514663335149321}
-  m_BodyType: 1
+  m_BodyType: 0
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -243,7 +185,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -0.00000008940697, y: 0.009446859}
+  m_Offset: {x: -0.00000008940697, y: 0.44074273}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -253,26 +195,8 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 0.5377881, y: 0.5566821}
+  m_Size: {x: 0.6, y: 0.6}
   m_EdgeRadius: 0
---- !u!114 &1639701787
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6471514663335149321}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d90ffddc1d7610847b6b23906a54f49d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  magnet: {fileID: 0}
-  pullerSpeed: 1.5
-  player: {fileID: 0}
-  scriptPlayer: {fileID: 0}
-  canMove: 0
-  rgd2d: {fileID: 0}
 --- !u!82 &1639701789
 AudioSource:
   m_ObjectHideFlags: 0
@@ -385,8 +309,24 @@ MonoBehaviour:
   player: {fileID: 0}
   playerScript: {fileID: 0}
   bat: {fileID: 0}
-  rgd2d: {fileID: 0}
   magnet: {fileID: 0}
   audioSource: {fileID: 0}
   pickUpSound: {fileID: 8300000, guid: 71fed63e74344c6c1b7b5545f5846f3f, type: 3}
   dropSound: {fileID: 8300000, guid: 2c92bdfe1043c244187eb3d45595ec5d, type: 3}
+  rgd2d: {fileID: 0}
+--- !u!114 &6217376245562860326
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6471514663335149321}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d90ffddc1d7610847b6b23906a54f49d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0
+  distance: 0
+  magnetTransform: {fileID: 6471514663335149319}
+  canPush: 0
